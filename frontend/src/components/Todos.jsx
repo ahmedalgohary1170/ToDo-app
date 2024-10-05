@@ -6,13 +6,7 @@ import { useState } from "react"
 
 
 
-const Todos = () => {
-    const [todos,settodos] = useState([
-        {title:'todos1',status:'INPROGRESS'},
-        {title:'todos2',status:'DONE'},
-        {title:'todos3',status:'INPROGRESS'},
-        {title:'todos4',status:'DONE'},
-    ])
+const Todos = ({todos,settodos}) => {
 
 
     return(
