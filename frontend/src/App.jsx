@@ -15,6 +15,12 @@ function App() {
     fetch("http://127.0.0.1:8000/todo/")
     .then(response => response.json())
     .then(data => settodos(data))
+
+
+
+  const OnUpdateTodo =(UpdateTodo)=>{
+    settodos(todos.map(todo =>(todo.id == UpdateTodo.id ? UpdateTodo : todo)))
+  }
   })
 
   return (
